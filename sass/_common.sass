@@ -20,9 +20,28 @@ body
 	color: #282828
 	font-weight: normal
 	+rc
-/*------------------------- ico -------------------------*/
 
+.h3
+	font-size: 24px
+	line-height: 1.2
+	font-weight: normal
+	text-transform: uppercase
+	+rc
+/*------------------------- ico -------------------------*/
+.ico
+	display: inline-block
+	vertical-align: middle
+
+.ico1
+	+s(ico1)
+.ico2
+	+s(ico2)
+.ico3
+	+s(ico3)
+.ico4
+	+s(ico4)
 /*-------------------------  header -------------------------*/
+// header
 .header
 	background: #323232
 	.container
@@ -33,6 +52,8 @@ body
 	.nav
 		margin-top: 10px
 		float: left
+
+// logo
 .logo
 	margin-top: 3px
 	margin-left: -1px
@@ -40,6 +61,8 @@ body
 	display: block
 	+s(logo)
 	+hide-text
+
+// nav
 .nav
 	ul
 		+clr
@@ -63,6 +86,7 @@ body
 		&:active
 			position: relative
 			top: 1px
+
 .header__contact
 	float: right
 	line-height: 1
@@ -81,11 +105,13 @@ body
 	color: #FA9722 
 	&:hover
 		text-decoration: none
+
 /*-------------------------  footer -------------------------*/
 .footer
 	padding-top: 40px
 	background: #323232
 
+// benefits
 .benefits
 	padding-bottom: 85px
 	ul
@@ -120,6 +146,7 @@ body
 	color: #FF9921
 	text-align: center
 
+// footer-bottom
 .footer-bottom
 	padding: 30px 0 25px
 	background: #323232 
@@ -147,9 +174,10 @@ body
 	a.footer-bottom__company
 		&:hover
 			text-decoration: underline
+
 /*-------------------------  block -------------------------*/
 .page
-
+	background: #FBFBFB 
 .page__meta
 	padding: 20px 0 17px
 	border-bottom: 1px solid #c4c4c4
@@ -160,6 +188,8 @@ body
 	float: left
 .page__meta-right
 	float: right
+
+// breadcrumbs
 .breadcrumbs
 	margin-top: 17px
 	ul
@@ -203,6 +233,12 @@ body
 		position: absolute
 		left: 0
 		bottom: 0
+.project__item-media
+	width: 300px
+	height: 305px
+	line-height: 305px
+	img
+		max-width: 100% 
 .project__item-descr
 	position: absolute
 	top: 0
@@ -236,9 +272,71 @@ body
 		font-weight: normal
 		+rc
 
+.project-meta
+	position: relative
+	&:before
+		content: ""
+		width: 100%
+		height: 220px
+		position: absolute
+		top: -105px
+		left: 0
+		right: 0
+		background: url(../img/meta-bg.jpg) 0px 0px repeat-x
+.project-meta__in
+	width: 960px
+	margin: 40px auto
+	position: relative
+	z-index: 100
+	+rc
+	+clr
+	.project-meta__title
+		float: left
+		font-size: 24px
+		font-weight: normal
+		&:before
+			content: ""
+			margin-top: -3px
+			margin-right: 10px
+			display: inline-block
+			vertical-align: middle
+			+s(i-title)
+	.project-meta__more
+		float: right
+		font-size: 14px
+		color: #FF9921
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+// cube
 .cube
 	width: 28px
 	height: 28px
 	background: #C5C5C5
 	border: 4px solid #fff
-
+	
+// services
+.services
+	margin-top: 40px
+	position: relative
+	z-index: 100
+	ul
+		margin-left: -42px
+		+clr
+	li
+		width: 455px
+		margin-left: 42px
+		margin-bottom: 50px
+		display: inline-block
+		vertical-align: top
+.services__ico
+	width: 74px
+	margin-right: 10px
+	float: left
+.services__descr
+	overflow: hidden
+	font-size: 13px
+	line-height: 1.2
+	+rc
+	.h3
+		margin-bottom: 25px
